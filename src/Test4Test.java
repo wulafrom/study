@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
  * @author: humm
  * @date: 2020-09-27 15:18
  */
-public class Test4 {
+public class Test4Test {
 
     @Test
     public void testBraek() {

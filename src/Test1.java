@@ -27,7 +27,7 @@ public class Test1 {
      * @return
      */
     public static Map<String, Integer> getRemaining(Integer number) {
-        Map<String, Integer> remaining = new HashMap<>();
+        Map<String, Integer> remaining = new HashMap<>(30);
         remaining.put("remainingWeek", number / 7);
         remaining.put("remainingDay", number - (number / 7) * 7);
         return remaining;

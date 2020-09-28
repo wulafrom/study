@@ -10,11 +10,11 @@ import java.util.List;
  * @author: humm
  * @date: 2020-09-27 15:33
  */
-public class Test5 {
+public class Test5Test {
 
     private String testName;
 
-    private Test5(String testName){
+    private Test5Test(String testName) {
         this.testName = testName;
     }
 
@@ -40,27 +40,31 @@ public class Test5 {
     @Test
     public void testPrimeNumber() {
         List<Integer> primeNumber = new ArrayList<Integer>();
-        for (int a = 101; a <= 200; a++) {
-            for (int b = 2; b < a; b++) {
+        int num1 = 101;
+        int num2 = 200;
+        for (int a = num1; a <= num2; a++) {
+            int start = 2;
+            for (int b = start; b < a; b++) {
                 if (a % b == 0) {
                     break;
-                }else {
+                } else {
                     primeNumber.add(a);
                     break;
                 }
             }
         }
         Iterator<Integer> iterator = primeNumber.iterator();
-        while (iterator.hasNext()){
-            System.out.print(iterator.next()+" ,");
+        while (iterator.hasNext()) {
+            System.out.print(iterator.next() + " ,");
         }
     }
 
     @Test
-    public void testMultiplication(){
-        for (int a = 1;a<=9;a++){
-            for (int b=1;b<=a;b++){
-                System.out.print(a+" * "+b+" ="+a*b+"  ");
+    public void testMultiplication() {
+        int upper = 9;
+        for (int a = 1; a <= upper; a++) {
+            for (int b = 1; b <= a; b++) {
+                System.out.print(a + " * " + b + " =" + a * b + "  ");
             }
             System.out.println();
         }

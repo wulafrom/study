@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
  * @author: humm
  * @date: 2020-09-27 21:05
  */
-public class Test6 {
+public class Test6Test {
     @Test
     public void testCreate() {
         //1.静态初始化

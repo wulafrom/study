@@ -6,11 +6,13 @@ import org.junit.jupiter.api.Test;
  * @author: humm
  * @date: 2020-09-27 15:01
  */
-public class Test3 {
+public class Test3Test {
     public static void main(String[] args) {
     }
 
-    //不能使用静态的
+    /**
+     * 不能使用静态的
+     */
     @Test
     public void testDoWhile() {
         int a = 10;
@@ -23,17 +25,17 @@ public class Test3 {
 
     @Test
     public void testFor() {
-        int a;
-        for (a = 0; a < 10; a++) {
+        int b = 10;
+        for (int a = 0; a < b; a++) {
             System.out.println(a);
         }
-        System.out.println(a);
     }
 
     @Test
     public void testWhile() {
         int a = 0;
-        while (a < 10) {
+        int b = 10;
+        while (a < b) {
             a++;
         }
         System.out.println(a);
@@ -41,8 +43,9 @@ public class Test3 {
 
     @Test
     public void testTwiceLoop() {
-        for (int a = 1; a <= 5; a++) {
-            for (int b = 1; b <= 10; b++) {
+        int num = 5;
+        for (int a = 1; a <= num; a++) {
+            for (int b = 1; b <= num; b++) {
                 System.out.print("*");
             }
             System.out.println();
@@ -66,7 +69,7 @@ public class Test3 {
     }
 
     private void iterator(int[] a) {
-        for(int i=0;i<a.length;i++){
+        for (int i = 0; i < a.length; i++) {
             System.out.print(a[i]);
         }
         System.out.println();
