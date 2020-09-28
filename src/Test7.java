@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
  * @date: 2020-09-27 21:19
  */
 public class Test7 {
-    
+
 
     /**
      * 1.选择排序 第一次全部比较
