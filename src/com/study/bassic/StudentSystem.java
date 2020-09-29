@@ -7,11 +7,11 @@ package com.study.bassic;
  * @date: 2020-09-28 21:52
  */
 public class StudentSystem {
-    private static Integer size = 0;
     private static Object[][] students = new Object[10][4];
 
 
     public void addStudet(Integer id, String name, Integer age, String gender) {
+        Integer size = 0;
         if (size == students.length) {
             Object[][] temp = new Object[students.length*2][4];
             System.arraycopy(students, 0, temp, 0, students.length);
@@ -30,11 +30,11 @@ public class StudentSystem {
         students[0][3] = 25;
         Object[][] sts = new Object[20][4];
         System.arraycopy(students, 0, sts, 0, students.length);
-        for (int i = 0; i < sts.length; i++) {
-            System.out.println(sts[i][0]);
-            System.out.println(sts[i][1]);
-            System.out.println(sts[i][2]);
-            System.out.println(sts[i][3]);
+        for (Object[] st : sts) {
+            System.out.println(st[0]);
+            System.out.println(st[1]);
+            System.out.println(st[2]);
+            System.out.println(st[3]);
         }
     }
 
