@@ -1,3 +1,5 @@
+package com.study.bassic;
+
 import org.testng.annotations.Test;
 
 /**
