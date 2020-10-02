@@ -7,7 +7,8 @@ package com.study.abstracttest;
  * @date: 2020-10-02 15:03
  */
 public interface Runner {
-    int id = 1;
+
+    int ID = 1;
 
     /**
      * 开始工作
