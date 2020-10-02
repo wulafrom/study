@@ -14,7 +14,7 @@ public class SystemTest {
 
     public static void main(String[] args) throws InterruptedException {
         long before = System.currentTimeMillis();
-        //Thread.sleep(1000);
+        Thread.sleep(1000);
         long after = System.currentTimeMillis();
         System.out.println(after-before);
 

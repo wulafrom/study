@@ -14,7 +14,8 @@ public class RandomTest {
         Random random = new Random();
         int r = random.nextInt();
         System.out.println(r);
-        for (int i = 1; i <= 5; i++) {
+        int bound = 5;
+        for (int i = 1; i <= bound; i++) {
             int i1 = 1 + random.nextInt(5);
             System.out.println(i1);
         }
@@ -24,7 +25,8 @@ public class RandomTest {
         System.out.println(nextLong);
 
         int randomNumber = 0;
-        for (int i = 1; i <= 3; i++) {
+        int cycleNumber = 3;
+        for (int i = 1; i <= cycleNumber; i++) {
             int nextInt = random.nextInt(10);
             randomNumber = randomNumber * 10 + nextInt;
         }
