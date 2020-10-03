@@ -1,7 +1,6 @@
 package com.study.commonlyobject;
 
 import java.util.Random;
-import java.util.stream.IntStream;
 
 /**
  * @version V1.0

@@ -10,8 +10,8 @@ public class StudentSystem {
     private static Object[][] students = new Object[10][4];
 
 
-    public void addStudet(Integer id, String name, Integer age, String gender) {
-        Integer size = 0;
+    public void addStudent(Integer id, String name, Integer age, String gender) {
+        int size = 0;
         if (size == students.length) {
             Object[][] temp = new Object[students.length*2][4];
             System.arraycopy(students, 0, temp, 0, students.length);

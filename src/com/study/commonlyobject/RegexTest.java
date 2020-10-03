@@ -6,7 +6,6 @@ import org.testng.annotations.Test;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.regex.Matcher;
@@ -22,7 +21,7 @@ public class RegexTest {
     /**
      * 定义匹配规则
      */
-    private static Pattern PATTERN = Pattern.compile("[a-zA-Z0-9]{4}");
+    private static final Pattern PATTERN = Pattern.compile("[a-zA-Z0-9]{4}");
     public static void main(String[] args){
         //使用匹配器
         Matcher matcher = PATTERN.matcher("9Aa9");
@@ -89,7 +88,7 @@ public class RegexTest {
         URLConnection urlConnection = url.openConnection();
         urlConnection.setConnectTimeout(1000*10);
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
-        String line = null;
+        String line;
         String regex = "[a-zA-Z0-9_-]+@+\\\\w(\\\\.[a-z])+";
         Pattern pattern = Pattern.compile(regex);
         while ((line=bufferedReader.readLine())!=null){

@@ -3,7 +3,6 @@ package com.study.bassic;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -14,10 +13,7 @@ import java.util.List;
  */
 public class Test5Test {
 
-    private String testName;
-
     private Test5Test(String testName) {
-        this.testName = testName;
     }
 
     @Test
@@ -29,7 +25,7 @@ public class Test5Test {
     public double getMileage(int times) {
         double mileage = 100;
         for (int i = 1; i < times; i++) {
-            mileage += mileage / Math.pow(2, i - 0);
+            mileage += mileage / Math.pow(2, i);
         }
         return mileage;
     }
@@ -47,17 +43,14 @@ public class Test5Test {
         for (int a = num1; a <= num2; a++) {
             int start = 2;
             for (int b = start; b < a; b++) {
-                if (a % b == 0) {
-                    break;
-                } else {
+                if (a % b != 0) {
                     primeNumber.add(a);
-                    break;
                 }
+                break;
             }
         }
-        Iterator<Integer> iterator = primeNumber.iterator();
-        while (iterator.hasNext()) {
-            System.out.print(iterator.next() + " ,");
+        for (Integer integer : primeNumber) {
+            System.out.print(integer + " ,");
         }
     }
 

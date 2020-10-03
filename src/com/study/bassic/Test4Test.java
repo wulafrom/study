@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 public class Test4Test {
 
     @Test
-    public void testBraek() {
+    public void testBreak() {
         int[] a = {1, 2, 3};
         for (int b : a) {
             if (b == 2) {

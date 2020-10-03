@@ -29,7 +29,7 @@ public enum EnumTest {
      */
     private Integer index;
 
-    private EnumTest(String name, Integer index) {
+    EnumTest(String name, Integer index) {
         this.name = name;
         this.index = index;
     }

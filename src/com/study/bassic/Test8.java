@@ -31,7 +31,7 @@ public class Test8 {
      * 数组元素一个一个遍历，比较
      */
     @Test
-    public void testSerach(){
+    public void testSearch(){
         int a = 4;
         for (int i = 0; i < Constans.DATA.length; i++) {
             if (Constans.DATA[i]==0){

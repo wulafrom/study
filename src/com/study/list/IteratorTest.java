@@ -1,7 +1,6 @@
 package com.study.list;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -15,9 +14,8 @@ public class IteratorTest {
         List<String> list = new ArrayList<String>();
         list.add("abc");
         list.add("edf");
-        Iterator<String> iterator = list.iterator();
-        while (iterator.hasNext()) {
-            System.out.println(iterator.next());
+        for (String s : list) {
+            System.out.println(s);
         }
     }
 }

@@ -1,7 +1,5 @@
 package com.study.commonlyobject;
 
-import jdk.nashorn.internal.objects.NativeJSON;
-
 import java.util.Properties;
 
 /**

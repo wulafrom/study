@@ -71,8 +71,8 @@ public class Test3Test {
     }
 
     private void iterator(int[] a) {
-        for (int i = 0; i < a.length; i++) {
-            System.out.print(a[i]);
+        for (int j : a) {
+            System.out.print(j);
         }
         System.out.println();
     }
