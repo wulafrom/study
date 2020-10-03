@@ -3,7 +3,7 @@ package com.study.bassic;
 /**
  * @version V1.0
  * @Description: 分支语句
- * @author: humm
+ * @author: h'mm
  * @date: 2020-09-26 18:11
  */
 public class Test2 {

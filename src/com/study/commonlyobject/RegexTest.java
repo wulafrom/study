@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
 /**
  * @version V1.0
  * @Description:
- * @author: humm
+ * @author: h'mm
  * @date: 2020-10-01 15:36
  */
 public class RegexTest {
@@ -46,7 +46,7 @@ public class RegexTest {
      * 复选集定义 [abc]; [abc][cd]; [^abc]; [a-d1-8]
      * @Param: []
      * @Return: void
-     * @Author: humm
+     * @Author: h'mm
      * @Date: 2020-10-01 16:21
      */
     @Test
@@ -62,7 +62,7 @@ public class RegexTest {
      * @Description: 对与匹配到的元素的个数限制
      * @Param: []
      * @Return: void
-     * @Author: humm
+     * @Author: h'mm
      * @version V1.0
      * @Date: 2020-10-01 16:30
      */
@@ -79,7 +79,7 @@ public class RegexTest {
      * @Description:测试匹配的邮箱的正则表达式
      * @Param: []
      * @Return: void
-     * @Author: humm
+     * @Author: h'mm
      * @version V1.0
      * @Date: 2020-10-01 16:35
      */

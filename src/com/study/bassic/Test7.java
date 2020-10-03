@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 /**
  * @version V1.0
  * @Description: 数组排序
- * @author: humm
+ * @author: h'mm
  * @date: 2020-09-27 21:19
  */
 public class Test7 {

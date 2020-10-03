@@ -1,7 +1,7 @@
 package com.study.bassic;
 
 /**
- * @author humm
+ * @author h'mm
  */
 public class Main {
 
