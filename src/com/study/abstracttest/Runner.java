@@ -52,7 +52,7 @@ public interface Runner {
      * @version V1.0
      * @Date: 2020-10-02 15:22
      */
-    public static void hello() {
+    static void hello() {
         System.out.println("hello");
     }
 }

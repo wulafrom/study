@@ -6,7 +6,6 @@ import org.testng.annotations.Test;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.regex.Matcher;
@@ -15,14 +14,14 @@ import java.util.regex.Pattern;
 /**
  * @version V1.0
  * @Description:
- * @author: humm
+ * @author: h'mm
  * @date: 2020-10-01 15:36
  */
 public class RegexTest {
     /**
      * 定义匹配规则
      */
-    private static Pattern PATTERN = Pattern.compile("[a-zA-Z0-9]{4}");
+    private static final Pattern PATTERN = Pattern.compile("[a-zA-Z0-9]{4}");
     public static void main(String[] args){
         //使用匹配器
         Matcher matcher = PATTERN.matcher("9Aa9");
@@ -46,7 +45,7 @@ public class RegexTest {
      * 复选集定义 [abc]; [abc][cd]; [^abc]; [a-d1-8]
      * @Param: []
      * @Return: void
-     * @Author: humm
+     * @Author: h'mm
      * @Date: 2020-10-01 16:21
      */
     @Test
@@ -62,7 +61,7 @@ public class RegexTest {
      * @Description: 对与匹配到的元素的个数限制
      * @Param: []
      * @Return: void
-     * @Author: humm
+     * @Author: h'mm
      * @version V1.0
      * @Date: 2020-10-01 16:30
      */
@@ -79,7 +78,7 @@ public class RegexTest {
      * @Description:测试匹配的邮箱的正则表达式
      * @Param: []
      * @Return: void
-     * @Author: humm
+     * @Author: h'mm
      * @version V1.0
      * @Date: 2020-10-01 16:35
      */
@@ -89,7 +88,7 @@ public class RegexTest {
         URLConnection urlConnection = url.openConnection();
         urlConnection.setConnectTimeout(1000*10);
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
-        String line = null;
+        String line;
         String regex = "[a-zA-Z0-9_-]+@+\\\\w(\\\\.[a-z])+";
         Pattern pattern = Pattern.compile(regex);
         while ((line=bufferedReader.readLine())!=null){

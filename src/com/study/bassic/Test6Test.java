@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 /**
  * @version V1.0
  * @Description:
- * @author: humm
+ * @author: h'mm
  * @date: 2020-09-27 21:05
  */
 public class Test6Test {
@@ -26,8 +26,8 @@ public class Test6Test {
     }
 
     public static void iterator(int[] a) {
-        for(int i=0;i<a.length;i++){
-            System.out.print(a[i]+" ");
+        for (int j : a) {
+            System.out.print(j + " ");
         }
         System.out.println();
     }

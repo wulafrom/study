@@ -3,7 +3,7 @@ package com.study.commonlyobject;
 /**
  * @version V1.0
  * @Description: 测试Object的方法
- * @author: humm
+ * @author: h'mm
  * @date: 2020-09-29 15:02
  */
 public class ObjectTest {
@@ -17,7 +17,7 @@ public class ObjectTest {
      * @Description:
      * @Param: [text] 要打印的文本
      * @Return: java.lang.String
-     * @Author: humm
+     * @Author: h'mm
      * @Date: 2020-09-29 17:32
      */
    public String testText(String text){

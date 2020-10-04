@@ -5,13 +5,13 @@ import org.junit.jupiter.api.Test;
 /**
  * @version V1.0
  * @Description:
- * @author: humm
+ * @author: h'mm
  * @date: 2020-09-27 15:18
  */
 public class Test4Test {
 
     @Test
-    public void testBraek() {
+    public void testBreak() {
         int[] a = {1, 2, 3};
         for (int b : a) {
             if (b == 2) {

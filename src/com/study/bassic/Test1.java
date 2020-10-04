@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * @version V1.0
  * @Description:
- * @author: humm
+ * @author: h'mm
  * @date: 2020-09-26 17:28
  */
 public class Test1 {
@@ -23,10 +23,12 @@ public class Test1 {
     }
 
     /**
-     * 计算剩余的周数和天数
-     *
-     * @param number
-     * @return
+     * @Description:
+     * @Param: [number 天数]
+     * @Return: java.util.Map<java.lang.String, java.lang.Integer>
+     * @Author: h'mm
+     * @version V1.0
+     * @Date: 2020-10-03 14:06
      */
     public static Map<String, Integer> getRemaining(Integer number) {
         Map<String, Integer> remaining = new HashMap<>(30);
@@ -36,19 +38,18 @@ public class Test1 {
     }
 
     public static double getArea(double radius) {
-        double area = radius * radius * 3.14f;
-        return area;
+        return radius * radius * 3.14f;
     }
 
     public static void testAdd() {
-        int a = 0;
+        int a;
         int i = 0;
         a = i++;
         System.out.println(a);
     }
 
     public static void testAdds() {
-        int a = 0;
+        int a;
         int i = 0;
         a = ++i;
         System.out.println(a);

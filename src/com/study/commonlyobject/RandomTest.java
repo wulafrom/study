@@ -1,12 +1,11 @@
 package com.study.commonlyobject;
 
 import java.util.Random;
-import java.util.stream.IntStream;
 
 /**
  * @version V1.0
  * @Description:
- * @author: humm
+ * @author: h'mm
  * @date: 2020-10-01 13:53
  */
 public class RandomTest {

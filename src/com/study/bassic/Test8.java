@@ -7,7 +7,7 @@ import java.util.Arrays;
 /**
  * @version V1.0
  * @Description:
- * @author: humm
+ * @author: h'mm
  * @date: 2020-09-28 14:01
  */
 public class Test8 {
@@ -31,7 +31,7 @@ public class Test8 {
      * 数组元素一个一个遍历，比较
      */
     @Test
-    public void testSerach(){
+    public void testSearch(){
         int a = 4;
         for (int i = 0; i < Constans.DATA.length; i++) {
             if (Constans.DATA[i]==0){

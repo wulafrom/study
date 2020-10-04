@@ -3,7 +3,7 @@ package com.study.bassic;
 /**
  * @version V1.0
  * @Description:重写list类
- * @author: humm
+ * @author: h'mm
  * @date: 2020-09-28 17:06
  */
 public class MyList {
@@ -30,7 +30,7 @@ public class MyList {
 
     /**
      * @Description: 添加对象
-     * @author: humm
+     * @author: h'mm
      * @Param: 要保存的实例
      * @Return:
      * @Date: 2020-09-28 20:43
@@ -55,7 +55,7 @@ public class MyList {
 
     /**
      * @Description:
-     * @author: humm
+     * @author: h'mm
      * @Param: 数组下摆哦
      * @Return: 存放数据
      * @Date: 2020-09-28 21:49

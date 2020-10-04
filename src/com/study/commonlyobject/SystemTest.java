@@ -1,13 +1,11 @@
 package com.study.commonlyobject;
 
-import jdk.nashorn.internal.objects.NativeJSON;
-
 import java.util.Properties;
 
 /**
  * @version V1.0
  * @Description:
- * @author: humm
+ * @author: h'mm
  * @date: 2020-10-01 14:06
  */
 public class SystemTest {

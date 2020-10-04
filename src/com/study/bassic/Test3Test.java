@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 /**
  * @version V1.0
  * @Description:循环语句
- * @author: humm
+ * @author: h'mm
  * @date: 2020-09-27 15:01
  */
 public class Test3Test {
@@ -71,8 +71,8 @@ public class Test3Test {
     }
 
     private void iterator(int[] a) {
-        for (int i = 0; i < a.length; i++) {
-            System.out.print(a[i]);
+        for (int j : a) {
+            System.out.print(j);
         }
         System.out.println();
     }
