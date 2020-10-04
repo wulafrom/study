@@ -4,9 +4,8 @@
 /.settings/
 /.vscode/
 /bin/
+/out/
 
-
-.gitignore
 .classpath
 .project
 .settings
