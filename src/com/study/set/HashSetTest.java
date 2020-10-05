@@ -1,6 +1,7 @@
 package com.study.set;
 
 import java.util.*;
+import com.study.map.Student;
 
 /**
  * |--Set<E>,无序(不是索引顺序，因为没有索引),唯一。
