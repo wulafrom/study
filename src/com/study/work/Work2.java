@@ -57,7 +57,7 @@ public class Work2 {
         String userid = split[0];
         String userName = split[1];
         String mechanismId = split[2];
-        Gender gender = split[3] == "0" ? Gender.WOMAN : Gender.MAN;
+        Gender gender = Objects.equals(split[3], "0") ? Gender.WOMAN : Gender.MAN;
         String account = split[4];
         Date happenDate = new Date(Long.parseLong(split[5]));
         BigDecimal dealMoney = new BigDecimal(split[6]);
