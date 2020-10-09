@@ -1,5 +1,8 @@
 package com.study.synch;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
  * @version V1.0
  * @Description:
@@ -7,24 +10,26 @@ package com.study.synch;
  * @date: 2020-10-08 14:35
  */
 public class Station implements Runnable {
+
+
+    private final Logger logger = LoggerFactory.getLogger(this.getClass());
+
     private static Integer ticket = 1000;
 
-
-    public void run3() {
+    @Override
+    public synchronized void run() {
         while (true) {
-            //synchronized (this) {
             if (ticket > 0) {
                 try {
                     Thread.sleep(1);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                System.out.println("当前" + Thread.currentThread().getName() + "售出第 " + ticket + " 票");
+                logger.info("当前" + Thread.currentThread().getName() + " 售出第 " + ticket + " 票");
                 ticket--;
             } else {
                 break;
             }
-            //}
         }
     }
 
@@ -55,15 +60,15 @@ public class Station implements Runnable {
                     e.printStackTrace();
                 }
                 System.out.println("当前" + Thread.currentThread().getName() + "售出第 " + ticket.get() + " 票");
-                ticket.set(ticket.get()-1);
+                ticket.set(ticket.get() - 1);
             } else {
                 break;
             }
         }
     }
 
-    @Override
-    public void run() {
+    //@Override
+    public void run5() {
         ticket = 10;
         while (true) {
             if (ticket > 0) {
